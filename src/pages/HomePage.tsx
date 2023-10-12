@@ -8,7 +8,7 @@ import FooterBanner from '../components/home/FooterBanner';
 
 const HomePage = () => {
   const { isLoading, error, data } = useQuery<RootNews, Error>(
-    ['aliexpressTopKeywords'],
+    ['homePageNews'],
     {
       queryFn: () => newsService.getNews(),
       staleTime: Infinity,
@@ -38,7 +38,7 @@ const HomePage = () => {
           <FooterBanner data={data.result[7]} />
         </>
       ) : (
-        <div className="my-2 w-full">Data gelmedi!</div>
+        <div className="my-2 w-full">GETTING DATA FAILED!</div>
       )}
     </div>
   );
