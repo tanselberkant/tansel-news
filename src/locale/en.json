@@ -1,0 +1,16 @@
+{
+    "translation": {
+        "LoginTitle": "Welcome! Please Write Your Name to Continue",
+        "LoginNameLabel": "Your Name",
+        "LoginNamePlaceHolder": "John Done",
+        "LoginBtn": "Continue",
+        "navigation": {
+            "news": "News",
+            "features": "Features"
+        },
+        "morePages": {
+            "newsPageContent": "Its News Page",
+            "featuresPageContent": "Its Features Page"
+        }
+    }
+}

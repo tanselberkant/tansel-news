@@ -1,0 +1,16 @@
+{
+    "translation": {
+        "LoginTitle": "Hoş geldiniz! Devam Etmek İçin Lütfen İsminizi Giriniz",
+        "LoginNameLabel": "İsminiz",
+        "LoginNamePlaceHolder": "Tansel Berkant Oflaz....",
+        "LoginBtn": "Devam Et",
+        "navigation": {
+            "news": "Haberler",
+            "features": "Özellikler"
+        },
+        "morePages": {
+            "newsPageContent": "NEWS SAYFASI",
+            "featuresPageContent": "FEATURES SAYFASI"
+        }
+    }
+}

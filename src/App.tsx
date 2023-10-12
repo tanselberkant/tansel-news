@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import AuthRouter from './routes/AuthRouter';
+import Login from './pages/auth/Login';
+import UserRouter from './routes/UserRouter';
+import HomePage from './pages/HomePage';
+import FeaturesPage from './pages/FeaturesPage';
+import NewsPage from './pages/NewsPage';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 function App() {
+  const queryClient = new QueryClient();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <Routes>
+        <Route element={<AuthRouter />}>
+          <Route path={'/login'} element={<Login />} />
+        </Route>
+        <Route element={<UserRouter />}>
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/features" element={<FeaturesPage />} />
+          <Route path="/" element={<HomePage />} />
+        </Route>
+      </Routes>
+    </QueryClientProvider>
   );
 }
 

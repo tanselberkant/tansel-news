@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+## Projeyi Başlatmak
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Root klasörde terminal'de `npm install` yapın
+Daha sonra `npm start` komutu ile uygulamayı başlatabilirsiniz
 
-## Available Scripts
+[http://localhost:3000](http://localhost:3000) Adresine giderek projeyi görüntüleyebilirsiniz
 
-In the project directory, you can run:
+## Ödevler Üzerindeki Yorumlarım
 
-### `npm start`
+UI Tasarımını çıkarmak için TailwindCSS'i kullandım. Kendimi tailwindcss ile çok rahat hissettiğim için onu tercih ettim. Anasayfa haricinde diğer sayfaları yapmadım. Bunun için hem zaman ayıramadım hem de anasayfa görüntüsüne benzer bir başka görüntüyü kopyala yapıştır yaparak bir şey çıkarıp bunu göstermeyi mantıklı bulamadım.
+Tasarımı çıkarken Figma'yı örnek aldım ve renkleri ve genel yapıyı oradan seçtim. Fakat tüm cihazlar için özel responsive çalışması yapmadım. Yine de responsive bir görünüm verdim fakat bunu Figma tasarımıyla doğru orantılı bir şekilde yaparak zaman kaybetmek istemedim.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+State Yönetimi için Redux tercih ettim. Bu tercihimin asıl sebebi redux konusunda az bilgili olmamdı. Şuanda çalıştığım şirkette Context kullanıyoruz ve bu yapılarda temelde kuruluyor ve sonra unutuluyor her zaman aktif yazılmadıkları için. Benim redux'ı tekrar kendime hatırlatmak istediğim bir dönemde bu fırsatı görünce redux'ı kendime hatırlatarak redux ile state yönetimini tercih ettim. Global bir state'e nerede ihtiyacım olur ki nerede kullanım derken tasarımda yazar isimlerini görünce aklıma geren fikirle proje açılış ekranında userName kabul eden bir input alanı ile kendimce bir state yapısı kurmak istedim.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Server State yönetimi için React Query tecrübem olduğu için onu kullanmak istedim. Çalıştığım yerde deneyimleme fırsatım oldu. Açıkcası mantığını beğendim bir yapı fakat gelen veride filtreleme yapılması gereken bazı özel durumlarda sorun yaşadığımız bazı yerlerde kullanmamayı tercih ettiğimiz bir şeye dönüştü sonradan. Yine belli yerlerde belli amaçlarda kullanabildiğim için burada da bunu tercih ettim.
 
-### `npm test`
+Haber portalını görünce internetten Ücretsiz API'ler araştırdım ve 1000 istekli bir API bulunca projeye onu entegre ettim. Ve verimi oradan temin etmek istedim.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Navigasyon konusunu görünceye kadar aklımda Next ile geliştirme fikri vardı fakat React Router'ı görünce özellikle istenildiğini düşünerek bende o yolda ilerledim. İki farklı sayfa daha koydum, içi boş olsalarda yapının çalıştığını göstermek istedim. Aynı zamanda bir protected route diye düşünebileceğimiz bir login (isim girme zorunluğu) yaptım.
 
-### `npm run build`
+Localization'ı ingilizce ve türkçe olarak çok temel seviye de hazırladım.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Final Sözlerim
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Pazartesi task konusunda bilgilendirildikten sonra task'ı inceledim ve biraz zaman ayırmaya çalıştım. İlk üzüldüm çünkü keşke cumartesi bilgilendirilseydim de haftasonu zaman ayırsaydım dedim. İş yerinde yoğun bir hafta geçirdim ve bir akşamımda özel bir durum için kaynadı. Çalıştığım saatlerde ya da iş yerinde pek fazla bu taskla ilgilenemedim çünkü o davranışın etik olmayacağını düşünüyordum.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Değerlendirmelerinizde belki fikir verebilecek şeyleri ve kendi fikirlerimi sizlerle paylaşmak istedim. Task'ı yapmak zor gelmedi ve ya sıkılarak yapmadım onu da söylemek isterim. Uzun zamandır next yazıyordum ve tekrar react yazmak ve bir proje kurmak eğlenceliydi.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Tüm ekibinize teşekkür ederim.
